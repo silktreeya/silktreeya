@@ -57,6 +57,29 @@ Vibe Coding 모듈에서 특정 프롬프트 입력 시 순환 참조 오류가 
         </div>
     </main>
 
+    <section class="partnership-form">
+        <div class="section-title">🤝 제휴 문의하기</div>
+        <form action="https://formspree.io/f/xojpedqj" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">성함 / 업체명</label>
+                <input type="text" id="name" name="name" placeholder="홍길동 (주식회사 OOO)" required>
+            </div>
+            <div class="form-group">
+                <label for="email">이메일 주소</label>
+                <input type="email" id="email" name="_replyto" placeholder="example@domain.com" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">문의 제목</label>
+                <input type="text" id="subject" name="subject" placeholder="제휴 제안 건" required>
+            </div>
+            <div class="form-group">
+                <label for="message">문의 내용</label>
+                <textarea id="message" name="message" rows="5" placeholder="상세 내용을 입력해주세요." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">문의 보내기</button>
+        </form>
+    </section>
+
     <footer class="actions">
         <button class="btn btn-primary">상태 변경하기</button>
         <button class="btn btn-outline">목록으로 돌아가기</button>
