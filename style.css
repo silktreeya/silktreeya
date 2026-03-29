@@ -215,3 +215,14 @@ body {
     width: 100%;
     margin-top: 10px;
 }
+
+/* Comments Section Styles */
+.comments-section {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid var(--border-color);
+}
+
+#disqus_thread {
+    margin-top: 20px;
+}
