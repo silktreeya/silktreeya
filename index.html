@@ -3,34 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Issue Detail | 프로젝트 매니저</title>
+    <title>AI 기반 자동 코드 생성 모듈 오류 수정 | 프로젝트 매니저</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
     <meta name="google-adsense-account" content="ca-pub-9328520999797572">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9328520999797572"
      crossorigin="anonymous"></script>
+    <meta name="description" content="AI 기반 자동 코드 생성 모듈에서 발생하는 순환 참조 오류 리포트입니다. Full Stack 키워드 입력 시 중복 생성 문제를 해결하기 위한 상세 내용을 확인하세요.">
 </head>
 <body>
 
-<div class="container">
-    <button id="theme-toggle" class="theme-toggle" aria-label="테마 변경">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-        </svg>
-    </button>
+<nav class="navbar">
+    <a href="index.html" class="nav-brand">프로젝트 매니저</a>
+    <div class="nav-links">
+        <a href="index.html">홈</a>
+        <a href="about.html">소개</a>
+        <a href="contact.html">문의</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="테마 변경">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+            </svg>
+        </button>
+    </div>
+</nav>
 
-    <header class="issue-header">
-        <span class="issue-id">#ISSUE-2026-03</span>
-        <h1 class="issue-title">AI 기반 자동 코드 생성 모듈 오류 수정</h1>
-        <div class="badges">
-            <span class="badge status-open">진행 중 (Open)</span>
-            <span class="badge priority-high">우선순위: 높음</span>
+<div class="layout-wrapper">
+    <main>
+        <div class="breadcrumbs">
+            <a href="index.html">홈</a> &gt; <a href="#">이슈 트래커</a> &gt; <span>#ISSUE-2026-03</span>
         </div>
-    </header>
 
-    <main class="issue-content">
-        <div class="section-title">📝 이슈 상세 설명</div>
-        <div class="description">
+        <div class="container">
+            <header class="issue-header">
+                <span class="issue-id">#ISSUE-2026-03</span>
+                <h1 class="issue-title">AI 기반 자동 코드 생성 모듈 오류 수정</h1>
+                <div class="badges">
+                    <span class="badge status-open">진행 중 (Open)</span>
+                    <span class="badge priority-high">우선순위: 높음</span>
+                </div>
+            </header>
+
+            <div class="issue-content">
+                <div class="section-title">📝 이슈 상세 설명</div>
+                <div class="description">
 Vibe Coding 모듈에서 특정 프롬프트 입력 시 순환 참조 오류가 발생하고 있습니다.
 특히 'Full Stack' 키워드가 포함될 때 백엔드 API 엔드포인트가 중복 생성되는 현상이 발견되었습니다.
 
@@ -38,79 +53,86 @@ Vibe Coding 모듈에서 특정 프롬프트 입력 시 순환 참조 오류가 
 1. 프롬프트 창에 "Build a full stack blog app" 입력
 2. 생성된 파일 목록에서 server.js 확인
 3. 동일한 포트(3000)를 사용하는 프로세스가 중복 실행됨
-        </div>
 
-        <div class="meta-grid">
-            <div class="meta-item">
-                <label>담당자</label>
-                <span>김철수 (Senior Developer)</span>
+[예상 원인]
+코드 생성 엔진의 재귀 함수 호출 시 종료 조건이 불분명하여, 동일한 명세서(Specification)를 기반으로 코드를 무한 생성하는 것으로 추측됩니다.
+                </div>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <label>담당자</label>
+                        <span>김철수 (Senior Developer)</span>
+                    </div>
+                    <div class="meta-item">
+                        <label>생성일</label>
+                        <span>2026년 3월 25일</span>
+                    </div>
+                    <div class="meta-item">
+                        <label>카테고리</label>
+                        <span>버그 리포트</span>
+                    </div>
+                    <div class="meta-item">
+                        <label>마감일</label>
+                        <span>2026년 3월 30일</span>
+                    </div>
+                </div>
             </div>
-            <div class="meta-item">
-                <label>생성일</label>
-                <span>2026년 3월 25일</span>
-            </div>
-            <div class="meta-item">
-                <label>카테고리</label>
-                <span>버그 리포트</span>
-            </div>
-            <div class="meta-item">
-                <label>마감일</label>
-                <span>2026년 3월 30일</span>
-            </div>
+
+            <section class="comments-section">
+                <div class="section-title">💬 댓글 달기</div>
+                <div id="disqus_thread"></div>
+                <script>
+                    (function() { 
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://issue-detail.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+            </section>
+
+            <footer class="actions">
+                <button class="btn btn-primary">상태 변경하기</button>
+                <button class="btn btn-outline">목록으로 돌아가기</button>
+            </footer>
         </div>
     </main>
 
-    <section class="partnership-form">
-        <div class="section-title">🤝 제휴 문의하기</div>
-        <form action="https://formspree.io/f/xojpedqj" method="POST" class="contact-form">
-            <div class="form-group">
-                <label for="name">성함 / 업체명</label>
-                <input type="text" id="name" name="name" placeholder="홍길동 (주식회사 OOO)" required>
-            </div>
-            <div class="form-group">
-                <label for="email">이메일 주소</label>
-                <input type="email" id="email" name="_replyto" placeholder="example@domain.com" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">문의 제목</label>
-                <input type="text" id="subject" name="subject" placeholder="제휴 제안 건" required>
-            </div>
-            <div class="form-group">
-                <label for="message">문의 내용</label>
-                <textarea id="message" name="message" rows="5" placeholder="상세 내용을 입력해주세요." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">문의 보내기</button>
-        </form>
-    </section>
+    <aside class="sidebar">
+        <div class="sidebar-widget">
+            <h3 class="widget-title">최근 등록된 이슈</h3>
+            <ul class="widget-list">
+                <li><a href="#">#ISSUE-2026-02 다크모드 UI 깨짐 현상</a></li>
+                <li><a href="#">#ISSUE-2026-01 로그인 세션 만료 오류</a></li>
+                <li><a href="#">#ISSUE-2025-99 성능 최적화 제안</a></li>
+            </ul>
+        </div>
 
-    <section class="comments-section">
-        <div class="section-title">💬 댓글 달기</div>
-        <div id="disqus_thread"></div>
-        <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://issue-detail.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </section>
+        <div class="sidebar-widget">
+            <h3 class="widget-title">인기 카테고리</h3>
+            <ul class="widget-list">
+                <li><a href="#">버그 리포트 (42)</a></li>
+                <li><a href="#">기능 요청 (15)</a></li>
+                <li><a href="#">보안 업데이트 (8)</a></li>
+            </ul>
+        </div>
 
-    <footer class="actions">
-        <button class="btn btn-primary">상태 변경하기</button>
-        <button class="btn btn-outline">목록으로 돌아가기</button>
-    </footer>
+        <div class="sidebar-widget">
+            <h3 class="widget-title">광고 영역</h3>
+            <p style="font-size: 0.8rem; color: var(--text-sub);">여기에 AdSense 광고가 게재될 예정입니다.</p>
+        </div>
+    </aside>
 </div>
+
+<footer class="main-footer">
+    <div class="footer-links">
+        <a href="about.html">소개</a>
+        <a href="privacy.html">개인정보 처리방침</a>
+        <a href="terms.html">이용약관</a>
+        <a href="contact.html">제휴 문의</a>
+    </div>
+    <p class="copyright">&copy; 2026 프로젝트 매니저. All rights reserved.</p>
+</footer>
 
 </body>
 </html>

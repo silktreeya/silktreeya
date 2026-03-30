@@ -1,3 +1,5 @@
 {
-  "IDX.agenticWorkspace": true
+  "IDX.agenticWorkspace": true,
+  "google.gemini-cli-vscode-ide-companion.enabled": true,
+  "terminal.integrated.defaultProfile.linux": "google.gemini-cli-vscode-ide-companion.terminal"
 }
